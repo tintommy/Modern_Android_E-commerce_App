@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AppBanHangOnline</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rightAddress">Cung cấp\n các món hàng\n mà bạn cần</string>
+    <string name="quality">Mua sắm dễ dàng hơn</string>
+</resources>
