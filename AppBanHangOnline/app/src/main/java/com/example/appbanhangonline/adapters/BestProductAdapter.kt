@@ -14,6 +14,7 @@ import com.example.appbanhangonline.data.Product
 import com.example.appbanhangonline.databinding.BestDealsRvItemBinding
 import com.example.appbanhangonline.databinding.ProductRvItemBinding
 import com.example.appbanhangonline.databinding.SpecialRvItemBinding
+import com.example.appbanhangonline.helper.getProductPrice
 
 class BestProductAdapter() : RecyclerView.Adapter<BestProductViewHolder>() {
     private val callback = object : DiffUtil.ItemCallback<Product>() {
@@ -70,8 +71,7 @@ class BestProductViewHolder(private val binding: ProductRvItemBinding) :
             binding.tvNewPrice.visibility = View.INVISIBLE
             binding.tvOldPrice.text = "$"+product.price.toString()
         } else {
-            val remainingPricePercentage = 1f - product.offerPercentage.div(100)
-            val priceAfterOffer = remainingPricePercentage * product.price
+            val priceAfterOffer = product.offerPercentage.getProductPrice(product.price)
             binding.tvNewPrice.text = "$"+String.format("%.2f", priceAfterOffer)
             binding.tvOldPrice.text= "$"+product.price.toString()
             binding.tvOldPrice.paintFlags= Paint.STRIKE_THRU_TEXT_FLAG

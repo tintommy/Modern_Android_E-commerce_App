@@ -62,6 +62,7 @@ class SpecialProductViewHolder(private val binding: SpecialRvItemBinding) :
             .load(product.images[0])
             .into(binding.imgSpecialRvItem);
 
+
         binding.tvSpecialProductName.text = product.name
         binding.tvSpecialProductPrice.text = "$"+product.price.toString()
 

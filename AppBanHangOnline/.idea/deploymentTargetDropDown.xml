@@ -8,6 +8,9 @@
       <entry key="ShoppingActivity">
         <State />
       </entry>
+      <entry key="SplashScreenActivity">
+        <State />
+      </entry>
     </value>
   </component>
 </project>

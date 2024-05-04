@@ -42,7 +42,7 @@ class ProductDetailFragment : Fragment() {
     private val sizeAdapter by lazy { SizeAdapter() }
     private val colorAdapter by lazy { ColorAdapter() }
     private var seletedColor: Int? = null
-    private var selectedSize: String? = null
+    private var selectedSize: String? = "s"
     private val viewModel by viewModels<DetailsViewModel>()
     private var soLuong: Int = 1
 
@@ -80,10 +80,10 @@ class ProductDetailFragment : Fragment() {
         })
 
         binding.btnAddToCart.setOnClickListener {
-            if (selectedSize == null || seletedColor == null) {
+            if ( seletedColor == null) {
                 Toast.makeText(
                     requireContext(),
-                    "Hãy chọn màu và kích thước của sản phẩm",
+                    "Hãy chọn màu của sản phẩm",
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
