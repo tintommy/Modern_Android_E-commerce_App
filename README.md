@@ -4,7 +4,7 @@
 <b>App: </b> Kotlin, MVVM Architecture, Firebase, Hilt, View Binding,
 Navigation, ViewPager
 <br />
-<b>Backend: </b> Firebase
+<b>Database: </b> Firebase
 
 <h3>Giao diện App</h3>
 
