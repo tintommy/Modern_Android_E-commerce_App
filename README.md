@@ -1,4 +1,4 @@
-# Modern_Android_E-commerce_App
+# Electronics Store
 
 <h3>Công nghệ sử dụng</h3>
 <b>App: </b> Kotlin, MVVM Architecture, Firebase, Hilt, View Binding,
